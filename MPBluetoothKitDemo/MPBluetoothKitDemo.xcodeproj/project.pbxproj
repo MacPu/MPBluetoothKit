@@ -15,6 +15,11 @@
 		C98F56BB1BE1FC2E0094010A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98F56B91BE1FC2E0094010A /* LaunchScreen.storyboard */; };
 		C98F56C61BE1FC2E0094010A /* MPBluetoothKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56C51BE1FC2E0094010A /* MPBluetoothKitDemoTests.m */; };
 		C98F56D11BE1FC2E0094010A /* MPBluetoothKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56D01BE1FC2E0094010A /* MPBluetoothKitDemoUITests.m */; };
+		C98F56E91BE1FCC50094010A /* MPCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E01BE1FCC50094010A /* MPCentralManager.m */; };
+		C98F56EA1BE1FCC50094010A /* MPCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E21BE1FCC50094010A /* MPCharacteristic.m */; };
+		C98F56EB1BE1FCC50094010A /* MPDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E41BE1FCC50094010A /* MPDescriptor.m */; };
+		C98F56EC1BE1FCC50094010A /* MPPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E61BE1FCC50094010A /* MPPeripheral.m */; };
+		C98F56ED1BE1FCC50094010A /* MPService.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E81BE1FCC50094010A /* MPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		C98F56CC1BE1FC2E0094010A /* MPBluetoothKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPBluetoothKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98F56D01BE1FC2E0094010A /* MPBluetoothKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPBluetoothKitDemoUITests.m; sourceTree = "<group>"; };
 		C98F56D21BE1FC2E0094010A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98F56DF1BE1FCC50094010A /* MPCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCentralManager.h; sourceTree = "<group>"; };
+		C98F56E01BE1FCC50094010A /* MPCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCentralManager.m; sourceTree = "<group>"; };
+		C98F56E11BE1FCC50094010A /* MPCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCharacteristic.h; sourceTree = "<group>"; };
+		C98F56E21BE1FCC50094010A /* MPCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCharacteristic.m; sourceTree = "<group>"; };
+		C98F56E31BE1FCC50094010A /* MPDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDescriptor.h; sourceTree = "<group>"; };
+		C98F56E41BE1FCC50094010A /* MPDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDescriptor.m; sourceTree = "<group>"; };
+		C98F56E51BE1FCC50094010A /* MPPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPeripheral.h; sourceTree = "<group>"; };
+		C98F56E61BE1FCC50094010A /* MPPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPeripheral.m; sourceTree = "<group>"; };
+		C98F56E71BE1FCC50094010A /* MPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPService.h; sourceTree = "<group>"; };
+		C98F56E81BE1FCC50094010A /* MPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		C98F56AA1BE1FC2E0094010A /* MPBluetoothKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C98F56DE1BE1FCC50094010A /* MPBluetoothKit */,
 				C98F56AE1BE1FC2E0094010A /* AppDelegate.h */,
 				C98F56AF1BE1FC2E0094010A /* AppDelegate.m */,
 				C98F56B11BE1FC2E0094010A /* ViewController.h */,
@@ -138,6 +154,23 @@
 				C98F56D21BE1FC2E0094010A /* Info.plist */,
 			);
 			path = MPBluetoothKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		C98F56DE1BE1FCC50094010A /* MPBluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				C98F56DF1BE1FCC50094010A /* MPCentralManager.h */,
+				C98F56E01BE1FCC50094010A /* MPCentralManager.m */,
+				C98F56E11BE1FCC50094010A /* MPCharacteristic.h */,
+				C98F56E21BE1FCC50094010A /* MPCharacteristic.m */,
+				C98F56E31BE1FCC50094010A /* MPDescriptor.h */,
+				C98F56E41BE1FCC50094010A /* MPDescriptor.m */,
+				C98F56E51BE1FCC50094010A /* MPPeripheral.h */,
+				C98F56E61BE1FCC50094010A /* MPPeripheral.m */,
+				C98F56E71BE1FCC50094010A /* MPService.h */,
+				C98F56E81BE1FCC50094010A /* MPService.m */,
+			);
+			path = MPBluetoothKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +305,11 @@
 			files = (
 				C98F56B31BE1FC2E0094010A /* ViewController.m in Sources */,
 				C98F56B01BE1FC2E0094010A /* AppDelegate.m in Sources */,
+				C98F56EA1BE1FCC50094010A /* MPCharacteristic.m in Sources */,
+				C98F56EB1BE1FCC50094010A /* MPDescriptor.m in Sources */,
+				C98F56ED1BE1FCC50094010A /* MPService.m in Sources */,
+				C98F56E91BE1FCC50094010A /* MPCentralManager.m in Sources */,
+				C98F56EC1BE1FCC50094010A /* MPPeripheral.m in Sources */,
 				C98F56AD1BE1FC2E0094010A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +534,7 @@
 				C98F56D71BE1FC2E0094010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98F56D81BE1FC2E0094010A /* Build configuration list for PBXNativeTarget "MPBluetoothKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +543,7 @@
 				C98F56DA1BE1FC2E0094010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98F56DB1BE1FC2E0094010A /* Build configuration list for PBXNativeTarget "MPBluetoothKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +552,7 @@
 				C98F56DD1BE1FC2E0094010A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
