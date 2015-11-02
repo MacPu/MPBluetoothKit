@@ -2,7 +2,7 @@
 //  MPBluetoothKitDemoUITests.m
 //  MPBluetoothKitDemoUITests
 //
-//  Created by 蒲德贵 on 15/10/29.
+//  Created by MacPu on 15/10/29.
 //  Copyright © 2015年 www.imxingzhe.com. All rights reserved.
 //
 
