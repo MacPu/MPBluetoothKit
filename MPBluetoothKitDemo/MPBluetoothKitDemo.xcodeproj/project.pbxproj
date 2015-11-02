@@ -66,6 +66,8 @@
 		C98F56E61BE1FCC50094010A /* MPPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPeripheral.m; sourceTree = "<group>"; };
 		C98F56E71BE1FCC50094010A /* MPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPService.h; sourceTree = "<group>"; };
 		C98F56E81BE1FCC50094010A /* MPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPService.m; sourceTree = "<group>"; };
+		C9B7E71D1BE7680B0081CDDE /* MPBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKit.h; sourceTree = "<group>"; };
+		C9B7E71E1BE7680B0081CDDE /* MPBluetoothKitBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKitBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,8 @@
 		C98F56DE1BE1FCC50094010A /* MPBluetoothKit */ = {
 			isa = PBXGroup;
 			children = (
+				C9B7E71D1BE7680B0081CDDE /* MPBluetoothKit.h */,
+				C9B7E71E1BE7680B0081CDDE /* MPBluetoothKitBlocks.h */,
 				C98F56DF1BE1FCC50094010A /* MPCentralManager.h */,
 				C98F56E01BE1FCC50094010A /* MPCentralManager.m */,
 				C98F56E11BE1FCC50094010A /* MPCharacteristic.h */,
