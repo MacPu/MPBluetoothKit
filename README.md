@@ -1,37 +1,72 @@
-#AAAssetsPicker
+#MPBluetoothKit
+This is a block-based framework for building Bluetooth iOS apps using the CoreBluetooth Framework.Its a very powerful and useful,and very easy to use it .
 
-##Perview
+version 0.1
 
-
-
-![I](1.jpg)
-![I](2.jpg)
-![I](3.jpg)
+## Why you should use this framework
++ ObjectiveC Block-based API for Bluetooth LE communication.
++ It provide a easiest way to use CoreBluetooth framework.
++ This project is activity.
++ It provide some very useful tools
 
 ##How to use it
 
-``` objective-c
-AAAssetsPickerViewController *controller = [[AAAssetsPickerViewController alloc] init];
-controller.selectedAssets = _selectedAssets;
-controller.delegate = self;
-controller.assetsFilter = [ALAssetsFilter allAssets];
-[self.navigationController pushViewController:controller animated:YES];
+### import it
+```object-c
+import "MPBluetoothKit.h"
+```
+
+###Scan for peripheral
+```object-c
+MPCentralManager *centralManager = [[MPCentralManager alloc] initWithQueue:queue options:options];
+[centralManager scanForPeripheralsWithServices:nil options:nil withBlock:^(MPCentralManager *centralManager,MPPeripheral *peripheral,NSDictionary *advertisementData,NSNumber *RSSI){
+
+  }];
+```
+
+###Connecting to a Peripheral
+
+```object-c
+[centralManager connectPeripheral:peripheral options:nil withSuccessBlock:^(MPCentralManager *centralManager, MPPeripheral *peripheral) {
+
+  }withDisConnectBlock:^(MPCentralManager *centralManager, MPPeripheral *peripheral, NSError *error) {
+
+    }];
+```
+
+###Read a Characteristic
+there is two way to read a Characteristic
+
+```object-c
+[peripheral readValueForCharacteristic:(nullable MPCharacteristic *)characteristic withBlock:^(MPPeripheral *peripheral,MPCharacteristic *characteristic,NSError *error){
+
+  }];
+```
+```object-c
+[characteristic readValueWithBlock:^(MPPeripheral *peripheral,MPCharacteristic *characteristic,NSError *error){
+
+  }];
+```
+###Write to a Characteristic
+there is two way to write to a characteristic
+
+```object-c
+
+[peripheral writeValue:(nullable NSData *)data
+ forCharacteristic:(nullable MPCharacteristic *)characteristic
+              type:(CBCharacteristicWriteType)type
+         withBlock:^(MPPeripheral *peripheral,MPCharacteristic *characteristic,NSError *error){
+         }];
+```
+```object-c
+[characteristic writeValue:(nullable NSData *)data
+              type:(CBCharacteristicWriteType)type
+         withBlock:^(MPPeripheral *peripheral,MPCharacteristic *characteristic,NSError *error){
+         }];
 ```
 
 
-``` objective-c
-@protocol AAAssetsPickerViewControllerDelegate <NSObject>
+more detail on MPBluetoothKit
 
-- (void)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController didFinishPickingAssets:(NSArray *)assets;
-
-@optional
-
-- (BOOL)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController shouldShowAssetsGroup:(ALAssetsGroup *)assetsGroup;
-- (BOOL)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController shouldShowAsset:(ALAsset *)asset;
-- (BOOL)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController isDefaultAssetsGroup:(ALAssetsGroup *)assetsGroup;
-- (BOOL)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController shouldSelectAsset:(ALAsset *)asset;
-- (void)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController didSelectedAsset:(ALAsset *)asset;
-- (void)assetsPickerViewController:(AAAssetsPickerViewController *)assetsPickerViewController didDeselectedAsset:(ALAsset *)asset;
-
-@end
-```
+##Required
+CoreBluetooth.framework
