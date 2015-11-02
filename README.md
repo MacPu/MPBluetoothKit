@@ -1,7 +1,8 @@
 #MPBluetoothKit
 This is a block-based framework for building Bluetooth iOS apps using the CoreBluetooth Framework.Its a very powerful and useful,and very easy to use it .
 
-version 0.1
+####Version
+v0.1
 
 ## Why you should use this framework
 + ObjectiveC Block-based API for Bluetooth LE communication.
@@ -69,4 +70,5 @@ there is two way to write to a characteristic
 more detail on MPBluetoothKit
 
 ##Required
-CoreBluetooth.framework
++ CoreBluetooth.framework
++ iOS 7.0 or later
