@@ -1,5 +1,5 @@
 #MPBluetoothKit
-This is a block-based framework for building Bluetooth iOS apps using the CoreBluetooth Framework.Its a very powerful and useful,and very easy to use it .
+This is a block-based framework for building Bluetooth iOS apps using the CoreBluetooth Framework.Its a very powerful and useful,and very easy to use it . originally developed for BI-CI
 
 ####Version
 v0.1
@@ -72,3 +72,7 @@ more detail on MPBluetoothKit
 ##Required
 + CoreBluetooth.framework
 + iOS 7.0 or later
+
+##TODO
+v0.2
++ add WatchDog  reconnect when disconnected peripheral
