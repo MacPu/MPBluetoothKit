@@ -85,7 +85,7 @@
 
 - (nullable instancetype)initWithCharacteristic:(nullable CBCharacteristic *)characteristic andOwnPeripheral:(nullable MPPeripheral *)peripheral;
 
-- (void)readValueWithBlock:(nullable MPPeripheralReadValueForDescriptorsBlock)block;
+- (void)readValueWithBlock:(nullable MPPeripheralReadValueForCharacteristicBlock)block;
 
 - (void)writeValue:(nullable NSData *)data
               type:(CBCharacteristicWriteType)type

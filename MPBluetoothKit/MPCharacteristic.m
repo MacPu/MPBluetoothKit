@@ -71,7 +71,7 @@
     return _characteristic.isNotifying;
 }
 
-- (void)readValueWithBlock:(MPPeripheralReadValueForDescriptorsBlock)block
+- (void)readValueWithBlock:(MPPeripheralReadValueForCharacteristicBlock)block
 {
     if(_ownPeripheral){
         [_ownPeripheral readValueForCharacteristic:self withBlock:[block copy]];
