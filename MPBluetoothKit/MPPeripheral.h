@@ -29,7 +29,7 @@ NS_CLASS_AVAILABLE(NA, 7_0)
  *
  *  @discussion The unique, persistent identifier associated with the peripheral.
  */
-@property(readonly, nonatomic) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
+@property(readonly, nonatomic, nullable) NSUUID *identifier NS_AVAILABLE(NA, 7_0);
 
 /*!
  *  @property name

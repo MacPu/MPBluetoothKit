@@ -27,8 +27,8 @@
 
 @interface MPPeripheral() <CBPeripheralDelegate>
 {
-    MPPeripheralRedRSSIBlock                    _readRSSIBlock;
-    MPPeripheralDiscoverServicesBlock           _discoverServicesBlock;
+    MPPeripheralRedRSSIBlock            _readRSSIBlock;
+    MPPeripheralDiscoverServicesBlock   _discoverServicesBlock;
     
     NSMutableDictionary *_readValueForCharacteristicsBlocks;
     NSMutableDictionary *_writeValueForCharacteristicsBlocks;
@@ -39,6 +39,7 @@
     NSMutableDictionary *_discoverCharacteristicsBlocks;
     NSMutableDictionary *_discoverIncludedServicesBlocks;
     NSMutableDictionary *_discoverDescriptorsForCharacteristicBlocks;
+    NSNumber *_RSSI;
 }
 
 @property (nonatomic, strong) CBPeripheral *peripheral;
@@ -90,6 +91,11 @@
         [array addObject:[[MPService alloc] initWithService:service andOwnPeripheral:self]];
     }
     return array;
+}
+
+- (void)setRSSI:(NSNumber *)RSSI
+{
+    _RSSI = RSSI;
 }
 
 - (NSNumber *)RSSI
