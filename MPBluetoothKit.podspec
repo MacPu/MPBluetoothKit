@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MPBluetoothKit"
-  s.version      = "0.1"
+  s.version      = "0.1.0"
   s.summary      = "This is a block-based framework for building Bluetooth iOS apps using the CoreBluetooth Framework."
 
   # This description is used to generate tags and improve search results.
