@@ -12,8 +12,17 @@ v0.1
 
 ##How to use it
 
-### import it
+### manual
+download repository and add MPBluetoothKit/MPBluetoothKit to your project
 ```object-c
+import "MPBluetoothKit.h"
+```
+### cocoapods
+```
+pod 'MPBluetoothKit','~> 0.1.0'
+```
+then
+```
 import "MPBluetoothKit.h"
 ```
 
