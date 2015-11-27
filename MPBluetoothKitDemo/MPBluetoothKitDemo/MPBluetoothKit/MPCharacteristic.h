@@ -79,6 +79,13 @@
  */
 @property(readonly) BOOL isNotifying;
 
+/*!
+ * @property ownPeripheral
+ *
+ * @discussion
+ *      the peripheral that this characteristic belong to
+ *
+ */
 @property (nonatomic, weak, readonly, nullable) MPPeripheral *ownPeripheral;
 
 - (nullable instancetype)init NS_UNAVAILABLE;

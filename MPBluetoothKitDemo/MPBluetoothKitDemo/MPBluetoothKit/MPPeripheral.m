@@ -84,7 +84,7 @@
     return _peripheral.state;
 }
 
-- (NSArray<CBService *> *)services
+- (NSArray<MPService *> *)services
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for(CBService *service in _peripheral.services){
