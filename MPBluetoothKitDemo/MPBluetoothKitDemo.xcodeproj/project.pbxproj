@@ -20,6 +20,7 @@
 		C98F56EB1BE1FCC50094010A /* MPDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E41BE1FCC50094010A /* MPDescriptor.m */; };
 		C98F56EC1BE1FCC50094010A /* MPPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E61BE1FCC50094010A /* MPPeripheral.m */; };
 		C98F56ED1BE1FCC50094010A /* MPService.m in Sources */ = {isa = PBXBuildFile; fileRef = C98F56E81BE1FCC50094010A /* MPService.m */; };
+		C9A32CC81C0C8BEC0069CEFB /* PeripheralDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A32CC71C0C8BEC0069CEFB /* PeripheralDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		C98F56E61BE1FCC50094010A /* MPPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPeripheral.m; sourceTree = "<group>"; };
 		C98F56E71BE1FCC50094010A /* MPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPService.h; sourceTree = "<group>"; };
 		C98F56E81BE1FCC50094010A /* MPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPService.m; sourceTree = "<group>"; };
+		C9A32CC61C0C8BEC0069CEFB /* PeripheralDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralDetailViewController.h; sourceTree = "<group>"; };
+		C9A32CC71C0C8BEC0069CEFB /* PeripheralDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralDetailViewController.m; sourceTree = "<group>"; };
 		C9B7E71D1BE7680B0081CDDE /* MPBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKit.h; sourceTree = "<group>"; };
 		C9B7E71E1BE7680B0081CDDE /* MPBluetoothKitBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKitBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 				C98F56B11BE1FC2E0094010A /* ViewController.h */,
 				C98F56B21BE1FC2E0094010A /* ViewController.m */,
 				C98F56B41BE1FC2E0094010A /* Main.storyboard */,
+				C9A32CC61C0C8BEC0069CEFB /* PeripheralDetailViewController.h */,
+				C9A32CC71C0C8BEC0069CEFB /* PeripheralDetailViewController.m */,
 				C98F56B71BE1FC2E0094010A /* Assets.xcassets */,
 				C98F56B91BE1FC2E0094010A /* LaunchScreen.storyboard */,
 				C98F56BC1BE1FC2E0094010A /* Info.plist */,
@@ -309,6 +314,7 @@
 			files = (
 				C98F56B31BE1FC2E0094010A /* ViewController.m in Sources */,
 				C98F56B01BE1FC2E0094010A /* AppDelegate.m in Sources */,
+				C9A32CC81C0C8BEC0069CEFB /* PeripheralDetailViewController.m in Sources */,
 				C98F56EA1BE1FCC50094010A /* MPCharacteristic.m in Sources */,
 				C98F56EB1BE1FCC50094010A /* MPDescriptor.m in Sources */,
 				C98F56ED1BE1FCC50094010A /* MPService.m in Sources */,
