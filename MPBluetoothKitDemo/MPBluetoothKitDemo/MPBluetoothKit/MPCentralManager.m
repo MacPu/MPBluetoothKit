@@ -112,6 +112,7 @@
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
     _centralManager = central;
+    [_discoveredPeripherals removeAllObjects];
     if(_updateStateBlock){
         _updateStateBlock(self);
     }
