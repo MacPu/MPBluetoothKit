@@ -23,7 +23,8 @@ NSString *const kServiceCell = @"kServiceCell";
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.title = _peripheral.name;
     [self discoverServices];
