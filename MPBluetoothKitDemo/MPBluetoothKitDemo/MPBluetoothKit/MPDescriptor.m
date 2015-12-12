@@ -50,7 +50,7 @@
     return _descriptor.value;
 }
 
-- (void)readValueForWithBlock:(MPPeripheralReadValueForDescriptorsBlock)block
+- (void)readValueWithBlock:(MPPeripheralReadValueForDescriptorsBlock)block
 {
     if(_ownPeripheral){
         [_ownPeripheral readValueForDescriptor:self withBlock:[block copy]];

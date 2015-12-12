@@ -43,10 +43,31 @@
 @property(retain, readonly, nullable) id value;
 
 - (nullable instancetype)init NS_UNAVAILABLE;
-- (nullable instancetype)initWithDescriptor:(nullable CBDescriptor *)descriptor andOwnPeripheral:(nullable MPPeripheral *)peripheral;
+- (nullable instancetype)initWithDescriptor:(nullable CBDescriptor *)descriptor
+                           andOwnPeripheral:(nullable MPPeripheral *)peripheral;
 
-- (void)readValueForWithBlock:(nullable MPPeripheralReadValueForDescriptorsBlock)block;
+/*!
+ *  @method readValueWithBlock:
+ *
+ *  @param block        callback with this block.
+ *
+ *  @discussion			Reads the value of <i>self</i>.
+ *
+ *  @see                MPPeripheralReadValueForDescriptorsBlock
+ */
+- (void)readValueWithBlock:(nullable MPPeripheralReadValueForDescriptorsBlock)block;
 
+/*!
+ *  @method writeValue:withBlock:
+ *
+ *  @param data			The value to write.
+ *  @param block        callback with this block.
+ *
+ *  @discussion			Writes <i>data</i> to <i>self</i>'s value. Client characteristic configuration descriptors cannot be written using
+ *						this method, and should instead use @link setNotifyValue:forCharacteristic: @/link.
+ *
+ *  @see                MPPeripheralReadValueForDescriptorsBlock
+ */
 - (void)writeValue:(nullable NSData *)data withBlock:(nullable MPPeripheralWriteValueForDescriptorsBlock)block;
 
 @end
