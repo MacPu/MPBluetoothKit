@@ -61,11 +61,34 @@
 @property(retain, readonly, nullable) NSArray<MPCharacteristic *> *characteristics;
 
 - (nullable instancetype)init NS_UNAVAILABLE;
-- (nullable instancetype)initWithService:(nullable CBService *)service andOwnPeripheral:(nullable MPPeripheral *)peripheral;
+- (nullable instancetype)initWithService:(nullable CBService *)service
+                        andOwnPeripheral:(nullable MPPeripheral *)peripheral;
 
+/*!
+ *  @method discoverIncludedServices:WithBlock:
+ *
+ *  @param includedServiceUUIDs A list of <code>CBUUID</code> objects representing the included service types to be discovered. If <i>nil</i>,
+ *								all of <i>service</i>s included services will be discovered, which is considerably slower and not recommended.
+ *  @param block                callback with this block,(MPPeripheral *peripheral,CBService *service, NSError *error)
+ *
+ *  @discussion					Discovers the specified included service(s) of <i>self</i>.
+ *
+ *  @see						MPPeripheralDiscoverIncludedServicesBlock
+ */
 - (void)discoverIncludedServices:(nullable NSArray<CBUUID *> *)includedServiceUUIDs
                        withBlock:(nullable MPPeripheralDiscoverIncludedServicesBlock)block;
 
+/*!
+ *  @method discoverCharacteristics:WithBlock:
+ *
+ *  @param characteristicUUIDs	A list of <code>CBUUID</code> objects representing the characteristic types to be discovered. If <i>nil</i>,
+ *								all characteristics of <i>service</i> will be discovered, which is considerably slower and not recommended.
+ *  @param block                callback with this block,(MPPeripheral *peripheral,CBService *service,NSError *error)
+ *
+ *  @discussion					Discovers the specified characteristic(s) of <i>self</i>.
+ *
+ *  @see						MPPeripheralDiscoverCharacteristicsBlock
+ */
 - (void)discoverCharacteristics:(nullable NSArray<CBUUID *> *)characteristicUUIDs
                       withBlock:(nullable MPPeripheralDiscoverCharacteristicsBlock)block;
 
